@@ -1,0 +1,30 @@
+name = "yazsad"
+main = ".open-next/worker.js"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "yazsad"
+database_id = "REPLACE_WITH_REAL_D1_ID"
+migrations_dir = "drizzle/migrations"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "yazsad-uploads"
+
+[vars]
+NEXT_PUBLIC_APP_NAME = "YAZSAD"
+KVKK_VERSION = "2026-04-01"
+PLATFORM_COMMISSION_PCT = "15"
+
+# Secrets (wrangler secret put):
+#   CLERK_SECRET_KEY
+#   CLERK_WEBHOOK_SECRET
+#   IYZICO_API_KEY
+#   IYZICO_SECRET_KEY
+#   RESEND_API_KEY
+#   R2_ACCESS_KEY_ID
+#   R2_SECRET_ACCESS_KEY

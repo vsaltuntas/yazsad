@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./tokens.css";
+@import "./app.css";
+
+/* Tailwind preflight'ı tokens.css ile uyumlu hâle getir — body bg/font tokens'tan gelir */
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  [data-theme="editorial"] {
+    color-scheme: light;
+  }
+}
