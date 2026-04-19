@@ -1,0 +1,28 @@
+name = "yazsad"
+main = ".open-next/worker.js"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "yazsad-uploads"
+
+[vars]
+NEXT_PUBLIC_APP_NAME = "YAZSAD"
+KVKK_VERSION = "2026-04-01"
+PLATFORM_COMMISSION_PCT = "15"
+
+# Secrets — asla toml'a yazma, wrangler secret put ile ayarla:
+#   wrangler secret put DATABASE_URL
+#   wrangler secret put DATABASE_URL_DIRECT
+#   wrangler secret put SUPABASE_JWT_SECRET
+#   wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+#   wrangler secret put CLERK_SECRET_KEY
+#   wrangler secret put CLERK_WEBHOOK_SECRET
+#   wrangler secret put IYZICO_API_KEY
+#   wrangler secret put IYZICO_SECRET_KEY
+#   wrangler secret put RESEND_API_KEY
+#   wrangler secret put R2_ACCESS_KEY_ID
+#   wrangler secret put R2_SECRET_ACCESS_KEY
