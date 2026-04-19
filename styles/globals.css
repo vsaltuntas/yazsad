@@ -1,0 +1,13 @@
+/* Tokens + app styles — prototype'tan birebir.
+ * DOKUNULMAZ. Değişiklik gerekirse ürün sahibine sor, prototype/'u koru. */
+@import "./tokens.css";
+@import "./app.css";
+
+/* Tailwind katmanları — sadece utility yardımcıları için.
+ * Renkleri tokens.css'teki var(--*) taşıyor. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Preflight (Tailwind base) tokens.css ile çakışabilir; app.css tokens.css'ten sonra
+ * yüklendiği için onun reset'leri baskın. */
