@@ -17,5 +17,5 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 .turbo
-.tsbuildinfo
+*.tsbuildinfo
 next-env.d.ts
